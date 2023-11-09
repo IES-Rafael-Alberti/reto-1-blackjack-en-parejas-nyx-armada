@@ -149,7 +149,6 @@ if __name__=="__main__":
                 for i in range(2):
                     # el distribuidor coje dos cartas
                     manodistribuidor,cubierta=repartir_cartasdistribuidor(manodistribuidor,cubierta)
-                    print(manodistribuidor, cubierta)
                     # el jugador coje dos cartas
                     manojugador,cubierta=repartir_cartasjugador(manojugador,cubierta)
                 # se revela la mano del distribuidor
