@@ -47,6 +47,7 @@ def revelar_manojugador(manojugador):
         mensajejugador="\njugador tiene "+str(revelacionmanojugador)+" y X"
         return mensajejugador
     elif len(manojugador)>2:
+        revelacionmanojugador=manodistribuidor[0],manodistribuidor[1]
         mensajejugador="\njugador tiene "+str(revelacionmanojugador)+" y X"
         return mensajejugador
 
@@ -217,8 +218,8 @@ if __name__=="__main__":
                             seleccionerrorea="solo esta permitido introducir 1 o 2. intentalo de nuevo\n"
                             print (seleccionerrorea)
                     # se revela la mano del distribuidor
-                    revelacionmanodistribuidor=revelar_manodistribuidor(manodistribuidor)
-                    mensajedistribuidor="\ndistribuidor tiene "+str(revelacionmanodistribuidor)+" y X"
+                    mensajedistribuidor=revelar_mano(manodistribuidor,manojugador)
+                    # se imprimen las manos del distribuidor y del jugador
                     print(mensajedistribuidor)
                     if jugador:
                         # jugador elije una opcion
