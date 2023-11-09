@@ -219,10 +219,9 @@ if __name__=="__main__":
                             print (seleccionerrorea)
                     # se revela la mano del distribuidor
                     mensajedistribuidor=revelar_mano(manodistribuidor,manojugador)
-                    # se imprimen las manos del distribuidor y del jugador
                     print(mensajedistribuidor)
+                    # jugador elije una opcion
                     if jugador:
-                        # jugador elije una opcion
                         seleccionjugador=input("opcion 1: permanecer\nopcion 2: atacar\nelije una opcion: ")
                         if seleccionjugador=='1':
                             # el jugador no hace nada
